@@ -1,0 +1,85 @@
+:root {
+    /* handle fonts */
+    --font-family: 'Source Code Sans', 'Roboto', sans-serif;
+    font-family: var(--font-family);
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+hr {
+    width: 20vw;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+label[for="birthdate"], #birthdate {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #e0e0e0;
+    margin: 10px 0;
+}
+
+.date > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.date > div > label {
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.date > div > input {
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+}

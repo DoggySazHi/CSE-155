@@ -1,0 +1,149 @@
+# Smell and Taste
+- Smell (olfaction)
+	- Ability to perceive odours
+	- Occurs through sensory cells in nasal cavity
+- Taste (gustation)
+	- Chemical reception of sweet, salty, bitter, and sour sensations
+		- The "base" tastes (what about umami :marisathink:
+		- HOT??? like, spicy?
+- Flavor
+	- A perceptual process that combines smell and taste
+- Amazon trying to make a sensor that detects smell, mostly a failure
+	- Same with other research to detect taste - very hard to objectify it with any current sensor
+- Why do we care about smell and scent?
+	- To increase presence and immersion
+		- e.g., VR: Training and Gaming
+	- In an automatic virtual environment (e.g., CAVE military or UCM): immersive environment where displays or projectors are directed to three or six walls of a room-sized cube
+		- Used for military training: also simulates sound, rain/wind, other physical conditions
+			- But not taste/smell? How?
+		- Also people more freaked out after VR than without, i.e., training is even worse
+			- Why? possibly because smell is different - comparison between simulation and real is different, sensory overload
+		- How do we make a simulation that is not only realistic, but also immersive?
+			- Part of associative learning:
+				- release an odor when learning
+				- Release a same or different odor when resting
+				- Facilitates learning
+			- Can have positive or adverse performance
+			- Like haptic learning: you can also use odor to learn passively
+			- Also you can have olfaction overload: getting used to a smell means you can get "used" to it and not detect it, or even worse think it persists even when the odor is no longer being used
+## Smells
+- How to use smells/scents?
+	- Smell-o-vision...
+		- A smell system that can be produced in the same timing as a movie
+			- Huge pressure and the device has to be worn for the most efficiency
+		- 4DX film format to have a film to be augmented with practical effects like motion seats, wind, strobe lights, snow, and scents
+			- More immersion, or a cheesy effect
+	- How about for well-being?
+		- Release a fragrance depending on a user's state, e.g., sleeping or lack of sleep
+			- Could also be used for animals, such as artificial pheromones
+		- Multiple stimuli (e.g., sound, smell, sight)
+			- You rely on vision the most, even if conflicting
+				- Have an apple that tastes like a banana? You perceive it as an apple (or at most, a weirdly tasting apple)
+					- Unless you try to focus on taste or eat it with your eyes closed... but texture could also kick in
+		- VR biofeedback - also immersion
+	- Problems:
+		- disruptive, possible that others can smell outside the environment
+		- You get used to it and stopped smelling it (fatigue)
+			- Learn the appropriate ranges - don't use too much and don't use too long
+		- Smell is subjective (especially good/bad - see durian)
+		- Smell is not instant due to diffusion - can't change smells at an instant, also cannot start and stop smells (unless you have a fan, in which it could destroy the immersion)
+
+## Taste
+- Entertainment, health (e.g., not actually eating something but tastes like something else), immersive systems (VR/AR), culinary, well-being
+	- How do we make something that tastes like something else?
+		- How do we shock our tongue with a fork to taste strawberries???
+			- How do we make it not taste like metal as we do electrolysis with our saliva and produce chlorine and 
+				- WHO MADE A LICKABLE SCREEN
+					- The society we live in
+	- You could spray different distinct flavors and mix it together
+		- But it'd be weird... especially how to give it to different people
+- UI issues: yeah we really can't do this yet, at least in a way that's sanitary, universal, and consistent
+
+## Controlling Computers
+- OK, we went through all five senses and we now know how our responders work
+- We also respond with pretty much all our limbs, controlling our environment
+- We can also use these inputs with computers
+	- Bimanual: use all fingers and both hands, e.g., for both mouse and keyboard
+	- Index: e.g., finger drawing
+	- Multi-finger: holding a stylus on a drawing pad
+	- Two thumbs: typing on a phone keyboard
+	- One thumb: A one-handed controller to press buttons
+	- Foot: moving your foot in 3D space, e.g., driving
+	- Head tracking: move your head to control UI (e.g., VR/AR)
+- Motor Homunculus
+	- Represents the proportion of the somatosensory and motor cortex dedicated to each body part
+	- Like, identifying which parts of the brain controls which limbs/things move
+- Responders in Interactive systems
+	- Active responders
+		- Limbs, voice, eyes, muscles: something voluntary and we control (usually)
+	- Passive responders
+		- Physiological signals (muscular, sensory, brain, gastric activity) we can't easily control
+		- Body temperature, perspiration, heartbeat, also affected by environment
+		- Can be used to determine focus/activity since it is a reliable source of human psychology
+	- Limbs
+		- Fingers, hands, head, feet, whole body
+			- Control a system using physical input (e.g., buttons) or virtual input (e.g., camera to see the limbs)
+			- Most common because this functionality is all voluntary and is under conscious control
+			- Motion capture for the entire body to bring them into a world (movies, games, simulation)
+				- Must be detected and tracked: sensors everywhere!
+					- Or a good camera and a computer to process...
+- How to track?
+	- Vision-based, infrared
+		- Use cameras to detect and computer models to look
+			- One camera can infer depth, two cameras can know depth
+				- Former needs to use the concept of vanishing points to know perspective - originally used by artists to draw
+				- Perception of depth from 3D is easy with two cameras because of different perspectives, also by knowing the distance between two cameras the entire scene can be rendered
+					- Very accurate, but also computationally expensive
+			- Or use a depth camera (one camera + lidar/depth/ToF sensor)
+				- Super accurate with little processing required, but expensive as hell
+					- Also precise and the camera can be cheap since the depth sensor can handle that information, overlaid over the image 
+			- Or use all of them to get the best (and worst) of all abilities
+				- High resolution image, precise depth, and a pain in the posterior to program for, due to high quality data to process
+		- How to process the data?
+			- Preprocess for noise/background (i.e., useless information)
+				- Less data to process later
+			- Outline/edge detection, or limb detection by motion detection or color
+				- Use math to know which part is your body
+			- Feature extraction: contour detection and geometric analysis
+				- Use math to tell where your finger is
+			- Gesture recognition: matching gestures against templates or against advanced machine learning models
+				- Converting an action, such as pointing, into a control, such as clicking a button
+			- 3D inference: estimating 3D limb positions from 2D images using visual cues and 3D models
+				- More important without depth data to guess from the environment, but mostly to determine depth away from the camera
+				- Stereo cameras or depth sensors do most of the work already
+			- Lighting and occlusions can compromise performance
+				- Cannot tell 3D field with missing data
+	- IR tracking
+		- Like optical tracking but IR trackers are more precise since they don't conflict with the background
+			- Put retroreflective trackers on the object, then blast an IR light to see and filter the trackers from everything else with a camera + IR filter
+			- Good part: you can identify which is what you care about precisely
+			- Bad part: you need to put trackers on everything you care about, not dynamic
+			- Bad part: you need a lot of cameras to be accurate (also expensive)
+			- Bad part: doesn't work outdoors (sun produces IR, requires curtain)
+			- basically it's strong at precision and crappy in everything else
+	- Electromagnetic tracking
+		- Use magnetic fields to determine the position and orientation of a small transmitter attached to a limb
+			- Highly accurate, doesn't require line of sight, but you can't use metal objects since they'll obstruct the waves
+			- Some places produce a lot of EMF, such as high power areas
+		- Magnets are trackers and can be detected with a sensor array of magnetometers
+			- Limited range as well (a few feet cube) but extra sensitive to magnets in the room, even outside that range
+		- Expensive, usually
+	- Ultrasonic tracking
+		- Uses sound waves to detect limb position and movement
+			- Can track in 3D space without cameras
+			- Accuracy and range is limited compared to other techniques
+				- But, it's cheap
+			- E.g., determining head position relative to a scene - not precise, but it doesn't have to be
+				- Can be easily implemented, and multiple sensors
+				- Can also have interference with multiple ultrasonic sensors/emitters
+	- Capacitive sensing
+		- So... touchscreens (old ones were resisitive)
+		- Very accurate, limited tracking range, and again, mostly only used for touch screens
+		- Direct manipulation only
+		- Also can be used for proximity sensors
+	- Wearable devices (like VR/AR controllers)
+		- Gloves or motion sensors
+			- Gloves limit natural interaction, but detect precisely like gestures or movement
+		- Motion sensors are less accurate but provide more natural movement (position and orientation using accelerometers and gyroscopes and magnetometers)
+		- Generally intrusive to use, you feel something tracking you
+		- But are precise since they physically attach to you to capture motion data

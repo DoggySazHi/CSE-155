@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <hr/>
+    <div class="input-group">
+        <label for="birthdate">Enter your birthdate:</label>
+        <input type="date" id="birthdate">
+    </div>
+    <button onclick="calculateAge()">Calculate</button>
+    <hr/>
+    <div id="ageResult"></div>
+    
+    <!-- Load script at end because DOM is now ready -->
+    <script src="main.js"></script>
+</body>
+</html>
