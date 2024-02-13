@@ -1,0 +1,93 @@
+# The Human Brain
+- A lot of things we don't know about the human brain, and we want to know more
+- The brain does perception, cognition, handles stress/workload, and produces accidents and errors
+- It links our sensors with our responders
+
+## The Brain
+- Tons of synapses to be depressed af, with billions of neurons
+- Most complex biological structure known
+	- Not binary
+- Enables human capacity for
+	- Pondering
+	- Remembering
+	- Recalling
+	- Reasoning
+	- Deciding
+	- Communicating
+	- Etc.
+- With associations and meaning attached to sensory input, humans are vastly superior to the machines they interact with
+	- We associate and add meaning to all of the inputs receive and what we give
+	- Computers are pretty bad at knowing what we want, given input (e.g., context)
+	- Humans can also filter noise and understand perspectives and fill in the gaps
+		- We only need a little bit of information, know how to infer, and understand pretty accurately
+			- Nanoseconds! Subconsciously
+		- Computers are again, pretty bad at this
+			- Also slow, since they process all information as-is
+	- Taking a nap before something important (e.g., exam)
+		- Mostly to leave the brain to process - write from short term memory to long term
+			- Rather than overwriting short-term memory after studying a lot
+- Perception
+	- The first stage of processing for sensory input
+	- Associations formed
+- Psychophysics
+	- Branch of experimental psychology (since the 19th century)
+	- Relationship between human perception and physical phenomena
+	- Experimental method:
+		- Present subject with two stimuli, one after the other
+		- Stimuli differ in a physical property (e.g., frequency)
+		- Randomly vary the difference
+		- Determine threshold below which the two stimuli appear "the same"
+		- This threshold is the "just noticeable difference" (JND)
+			- e.g., vibration, sound, light/color
+			- Also subjective against different people (e.g., colorblind, tone deaf)
+		- Why important?
+			- E.g., mp3: bitrate compression, how far can we make a small file without the human noticing?
+				- How do we annoy audiophiles?
+	- Optical Ambiguity
+		- Two images (or more) from one
+		- Cube: which surface is at the front? (only outline)
+		- Rubin vase: wine goblet or two faces?
+		- Or seeing one thing or another, depending on angle or human instinct
+	- Optical Illusion
+		- Perceived difference due to instinct or heuristics
+	- Ambiguity and Illusion: movement depending on frame rate - also differences between animated cartoon (higher frame rate, brain can interpolate) vs hand-drawn (less frame rate, needs to simulate motion blur)
+		- Note that some frames are blank as well, so you can save memory/render time by holding a frame down
+		- We can simulate 3D surfaces with shading/rendering, or box shadow for depth on a 2D window
+		- Texture for an analogy of physical hardware, or a pressing animation
+		- Hover as well vs click - visual feedback and possibly audio/depth
+- Turns out certain shades of green and red placed next to each other creates "color vibration"
+	- Silently added a color gradient to their colors to smoothly distinct the colors without shadows
+		- Also changed the colors themselves for a better gradient
+- Perceptual mismatch
+	- Vision dominates when senses conflict (tactition vs. vision)
+	- E.g., virtual reality vs real-world controls
+		- Perceived in virtual reality even if the physical controls don't fully match
+		- So, we can screw up their senses and gaslight them into feeling something
+		- (Simulation sickness: we screwed up your perception and now you're confused)
+		- Used for haptic redirection in virtual reality by creating perceptual mismatch or illusion
+- Illusion in other senses
+	- If illusion is possible for the visual sense, the same should be true for the other senses
+		- Tactile/haptic illusion: phantom limb (oops, no arm!)
+		- Auditory illusion: shepard tone, infinitely rising tone, distance/direciton
+		- Taste illusion: pure capsaicin, that one miracle berry, pinching your nose, probably electrocution,
+		- Smell illusion: not really, probably electrocution
+			- Too many scents as well, but that's more of sensory overload
+- Cognition
+	- The human process of conscious intellectual activity
+		- Thinking reasoning, deciding, etc.
+	- Spans many fields
+		- Neurology, linguistics, anthropology, etc.
+	- Sensory phenomena are easy to study because they exist in the physical world
+- Making a decision
+	- Not possible to directly measure hte time for a human to "make a decision"
+		- Start? End? how? where? what inputs? how do we know?
+	- Sensor stimulus and motor response that bracket the decision
+	- Requires multiple parts: sensory reception, transmission (sensor -> brain), processing, transmission (brain -> muscle), and activation of response
+
+## Memory: short and long-term memory
+- A vast repository
+- Long-term memory has two regions:
+	- Declarative/explicit area: information about events in times nad objects in the external world
+	- Implicit/procedual area: How to use objects and how to do things
+- Short-term memory:
+	- Small, quick read access
