@@ -91,3 +91,6 @@
 	- Implicit/procedual area: How to use objects and how to do things
 - Short-term memory:
 	- Small, quick read access
+	- Working-memory
+	- Active information, readily available for access
+	- Amount of working memory is small: about 7 ($\pm$ 2) units
